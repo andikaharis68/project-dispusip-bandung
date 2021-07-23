@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap");
+
+.footer .footer-text-title {
+      font: 600 1.5rem Poppins, sans-serif;
+      color: #ffffff;
+}
+
+.footer .list-menu {
+      margin-bottom: 0;
+      color: #ffffff;
+      text-decoration: none !important;
+}
+
+.footer hr.hr {
+      margin: 0;
+      border: 0;
+      border-top: 1px solid #ffffff
+}
+
+.footer .border-color {
+      color: white;
+}
+
+.footer .footer-info-space {
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+}
+
+.footer .mapouter {
+      position: relative;
+      text-align: right;
+      width: 430px;
+      height: 300px;
+}
+
+.footer .gmap_canvas {
+      overflow: hidden;
+      background: none !important;
+      width: 430px;
+      height: 300px;
+}
+
+.footer .gmap_iframe {
+      width: 430px !important;
+      height: 300px !important;
+}
+
+@media (max-width: 575px) {
+      .footer .mapouter {
+            width: 100%;
+      }
+      
+      .footer .gmap_canvas {
+            width: 100%;
+      }
+      
+      .footer .gmap_iframe {
+            width: 100%;
+      }
+}

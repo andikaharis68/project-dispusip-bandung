@@ -1,0 +1,29 @@
+.icon-hover:hover {
+    background-color: #e2e8f0;
+}
+
+.icon-hover {
+    color: #818fa2;
+}
+
+.box-shadow {
+    /* border: 1px solid; */
+    box-shadow: 0 0.5px 0px 0px rgb(228, 228, 228);
+}
+
+.btn-special {
+    background-color: #fff;
+    color: #1C8DCF;
+    border-color: #1C8DCF;
+    border-width: 2px;
+}
+
+.btn-special:hover {
+    border-color: #1C8DCF;
+    color: #1C8DCF;
+    background-color: #eafaff;
+}
+
+.bold {
+    font-weight: 600;
+}
