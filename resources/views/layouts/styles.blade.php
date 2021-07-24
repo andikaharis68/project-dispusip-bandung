@@ -1,12 +1,12 @@
 <!-- Bootstrap -->
-<link href="{{ secure_asset('css/bootstrap.min.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/footer.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/contact.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/goal-target.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/main-task.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/header.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/main.css') }}" rel="stylesheet">
-<link href="{{ secure_asset('css/information.css') }}" rel="stylesheet">
+<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+<link href="{{ asset('css/footer.css') }}" rel="stylesheet">
+<link href="{{ asset('css/contact.css') }}" rel="stylesheet">
+<link href="{{ asset('css/goal-target.css') }}" rel="stylesheet">
+<link href="{{ asset('css/main-task.css') }}" rel="stylesheet">
+<link href="{{ asset('css/header.css') }}" rel="stylesheet">
+<link href="{{ asset('css/main.css') }}" rel="stylesheet">
+<link href="{{ asset('css/information.css') }}" rel="stylesheet">
 <!-- Google Font: Source Sans Pro -->
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
 <!-- Font Awesome -->

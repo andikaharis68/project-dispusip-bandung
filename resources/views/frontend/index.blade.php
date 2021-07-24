@@ -44,7 +44,7 @@
                               <div class="row g-3">
                                     <div class="col-sm">
                                           <div class="card rounded shadow border-0" data-toggle="modal" data-target="#modalDetailJadwal">
-                                                <img class="rounded shadow border-0" height="200" src="{{ secure_asset('img/jadwal-pelayanan.jpeg') }}" alt="">
+                                                <img class="rounded shadow border-0" height="200" src="{{ asset('img/jadwal-pelayanan.jpeg') }}" alt="">
                                           </div>
                                     </div>
                                     <div class="col-sm">
@@ -111,7 +111,7 @@
                                                                   </b>
                                                             </h4>
                                                             <h5>
-                                                                  KOTA BANDUNG
+                                                                  Kota Bandung
                                                             </h5>
                                                             <hr>
                                                       </div>
@@ -136,7 +136,7 @@
                                                       <div class="mt-4 mr-4 ml-4">
                                                             <h4>
                                                                   <b>
-                                                                        TOTAL PUSTAKA<br>
+                                                                        TOTAL BUKU<br>
                                                                   </b>
                                                             </h4>
                                                             <h5>
@@ -176,11 +176,11 @@
                                                       <div class="mt-4 mr-4 ml-4">
                                                             <h4>
                                                                   <b>
-                                                                        TOTAL PENGUNJUNG<br>
+                                                                        DATA OPD BINAAN<br>
                                                                   </b>
                                                             </h4>
                                                             <h5>
-                                                                  KOTA BANDUNG
+                                                                  Kota Bandung
                                                             </h5>
                                                             <hr>
                                                       </div>
@@ -205,11 +205,11 @@
                                                       <div class="mt-4 mr-4 ml-4">
                                                             <h4>
                                                                   <b>
-                                                                        TOTAL PENGUNJUNG<br>
+                                                                        TOTAL REKAPITULASI<br>
                                                                   </b>
                                                             </h4>
                                                             <h5>
-                                                                  7 Juli 2021
+                                                                  Arsip
                                                             </h5>
                                                             <hr>
                                                       </div>
@@ -323,7 +323,7 @@
                   <div class="d-flex container shadow flex-lg-row flex-column align-items-center card " style="background-color: #1C8DCF;">
                         <!-- Left Column -->
                         <div class="img-hero text-center justify-content-center d-flex">
-                              <img id="hero" class="img-fluid" src="{{ secure_asset('img/Content-3-1.png') }}" alt="" />
+                              <img id="hero" class="img-fluid" src="{{ asset('img/Content-3-1.png') }}" alt="" />
                         </div>
                         <!-- Right Column -->
                         <div class="right-column d-flex flex-column align-items-lg-start align-items-center text-lg-start text-center">
@@ -483,22 +483,22 @@
                   </div>
                   <div class="owl-carousel owl-theme container">
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/4.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/4.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ secure_asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
                         </div>
                   </div>
                   <div class="m-4">
@@ -518,14 +518,14 @@
                   <div class="row ml-4 mr-4">
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/1.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"></i> Description </p>
                                           </div>
                                     </a>
                               </div>
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/2.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/2.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
@@ -535,14 +535,14 @@
 
                         <div class="col-lg-4 mb-4 mb-lg-0">
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img height="420" class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/3.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img height="420" class="img-gallery-image" src="{{ asset('img/galeri-arsip/3.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
                                     </a>
                               </div>
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/4.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/4.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
@@ -552,14 +552,14 @@
 
                         <div class="col-lg-4 mb-4 mb-lg-0">
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/5.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/5.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
                                     </a>
                               </div>
                               <div class="img-gallery mb-4"> <a href="#">
-                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ secure_asset('img/galeri-arsip/1.jpg') }}">
+                                          <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
@@ -654,7 +654,7 @@
                         </div>
                         <div class="modal-body">
                               <div class="overflow-auto">
-                                    <img src="{{ secure_asset('img/arsip.jpeg') }}" alt="">
+                                    <img src="{{ asset('img/arsip.jpeg') }}" alt="">
                               </div>
                         </div>
 
@@ -693,6 +693,6 @@
             }
       })
 </script>
-<script type="text/javascript" src="{{ secure_asset('js/frontend/index.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/frontend/index.js') }}"></script>
 @endpush
 @endsection
