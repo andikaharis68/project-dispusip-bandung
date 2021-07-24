@@ -95,18 +95,20 @@
                               </div>
                               <div class="col-lg-6 mt-2">
                                     <div class="row" style="height: 265px;">
-                                          <div class="col-lg-6 col-md-6" >
-                                                <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4">
-                                                            <h5>
-                                                                  <b>
-                                                                        TOTAL PUSTAKA<br>
-                                                                  </b>
-                                                            </h5>
-                                                            <h6>
-                                                                  Kota Bandung
-                                                            </h6>
-                                                            <hr>
+                                          <div class="col-lg-6 col-md-6">
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div style="background-color: #1C8DCF; border-radius:2px">
+                                                            <div class="pt-4 mr-4 ml-4" style="color: #FFFFFF;">
+                                                                  <h5>
+                                                                        <b>
+                                                                              TOTAL PUSTAKA<br>
+                                                                        </b>
+                                                                  </h5>
+                                                                  <h6>
+                                                                        Kota Bandung
+                                                                  </h6>
+                                                                  <hr>
+                                                            </div>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
@@ -125,20 +127,22 @@
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                                <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4">
-                                                            <h5>
-                                                                  <b>
-                                                                        TOTAL BUKU<br>
-                                                                  </b>
-                                                            </h5>
-                                                            <h6>
-                                                                  Kota Bandung
-                                                            </h6>
-                                                            <hr>
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div style="background-color: #1C8DCF; border-radius:2px">
+                                                            <div class="mr-4 ml-4 pt-4" style="color: #FFFFFF;">
+                                                                  <h5>
+                                                                        <b>
+                                                                              TOTAL BUKU<br>
+                                                                        </b>
+                                                                  </h5>
+                                                                  <h6>
+                                                                        Kota Bandung
+                                                                  </h6>
+                                                                  <hr>
+                                                            </div>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
-                                                            <div class="col-12 mr-4 ml-4">
+                                                            <div class="col-12 mr-5 ml-4">
                                                                   <h6>Jumlah</h6>
                                                                   <h4>132.321</h4>
                                                             </div>
@@ -163,19 +167,21 @@
                                     </div>
                               </div>
                               <div class="col-lg-6 mt-4">
-                                    <div class="row" >
+                                    <div class="row">
                                           <div class="col-lg-6 col-md-6 rounded" style="height: 265px;">
-                                                <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4" >
-                                                            <h5>
-                                                                  <b>
-                                                                        DATA OPD BINAAN<br>
-                                                                  </b>
-                                                            </h5>
-                                                            <h6>
-                                                                  Kota Bandung
-                                                            </h6>
-                                                            <hr>
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div style="background-color: #1C8DCF; border-radius:2px">
+                                                            <div class="pt-4 mr-4 ml-4" style="color: #FFFFFF;">
+                                                                  <h5>
+                                                                        <b>
+                                                                              DATA OPD BINAAN<br>
+                                                                        </b>
+                                                                  </h5>
+                                                                  <h6>
+                                                                        Kota Bandung
+                                                                  </h6>
+                                                                  <hr>
+                                                            </div>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
@@ -194,17 +200,19 @@
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                          <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4" >
-                                                            <h5>
-                                                                  <b>
-                                                                        TOTAL REKAPITULASI<br>
-                                                                  </b>
-                                                            </h5>
-                                                            <h6>
-                                                                  Arsip
-                                                            </h6>
-                                                            <hr>
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div style="background-color: #1C8DCF; border-radius:2px">
+                                                            <div class="pt-4 mr-4 ml-4" style="color: #FFFFFF;">
+                                                                  <h5>
+                                                                        <b>
+                                                                              TOTAL REKAPITULASI<br>
+                                                                        </b>
+                                                                  </h5>
+                                                                  <h6>
+                                                                        Arsip
+                                                                  </h6>
+                                                                  <hr>
+                                                            </div>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
@@ -387,7 +395,7 @@
                                                       color: #1C8DCF;
                                                 }
                                           </style>
-                                    <i class="fas fa-bullhorn"></i>
+                                          <i class="fas fa-bullhorn"></i>
                                     </b>
                               </h2>
                         </div>
