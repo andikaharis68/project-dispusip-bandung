@@ -42,20 +42,13 @@
                         </div>
                         <div class="col-lg-6">
                               <div class="row g-3">
-                                    <div class="col-sm">
+                                    <div class="col-8">
                                           <div class="card rounded shadow border-0" data-toggle="modal" data-target="#modalDetailJadwal">
                                                 <img class="rounded shadow border-0" height="200" src="{{ asset('img/jadwal-pelayanan.jpeg') }}" alt="">
                                           </div>
                                     </div>
-                                    <div class="col-sm">
-                                          <div class="card rounded shadow p-3">
-                                                <div class="card-body">
-                                                      <h5 class="card-title fs-16 semi-bold">Hotline Dispusip</h5>
-                                                      <p class="card-subtitle text-muted fs-14 semi-bold mb-2">Info Peminjaman Buku</p>
-                                                      <img height=20 width=20 class="img-fluid" src="svg/whatsapp.svg" alt="">
-                                                      <a href="#" class="ml-2 h6" style="text-decoration: none; color: #1c8dcf; font-weight: bold;">Klik untuk chat</a>
-                                                </div>
-                                          </div>
+                                    <div class="col-4">
+                                          <img class="rounded shadow border-0 w-100" height="200" src="{{ asset('img/side-image2.png') }}" alt="">
                                     </div>
                               </div>
                               <div class="row mt-3">
@@ -388,7 +381,14 @@
                         <!-- <div class="border rounded overflow-hidden flex-md-row mb-4 p-4 shadow h-md-250 position-relative"> -->
                         <div class="pl-3 py-4 pb-2">
                               <h2>
-                                    <b>Berita Terkini</b>
+                                    <b>#informasiterkini
+                                          <style>
+                                                .fa-bullhorn {
+                                                      color: #1C8DCF;
+                                                }
+                                          </style>
+                                    <i class="fas fa-bullhorn"></i>
+                                    </b>
                               </h2>
                         </div>
                         <div class="row">
