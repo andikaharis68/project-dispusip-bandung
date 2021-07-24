@@ -89,66 +89,66 @@
                   <div class="container">
                         <div class="row pt-2 pb-4">
                               <div class="col-lg-6 mt-2">
-                                    <div class="border shadow rounded overflow-auto">
+                                    <div class="border-outline-1 shadow rounded overflow-auto">
                                           <canvas id="myChart" style="height:165px; width:400px"></canvas>
                                     </div>
                               </div>
                               <div class="col-lg-6 mt-2">
-                                    <div class="row">
-                                          <div class="col-lg-6 col-md-6">
-                                                <div class="border shadow rounded">
+                                    <div class="row" style="height: 265px;">
+                                          <div class="col-lg-6 col-md-6" >
+                                                <div class="border-outline-1 shadow rounded h-100" >
                                                       <div class="mt-4 mr-4 ml-4">
-                                                            <h4>
+                                                            <h5>
                                                                   <b>
                                                                         TOTAL PUSTAKA<br>
                                                                   </b>
-                                                            </h4>
-                                                            <h5>
-                                                                  Kota Bandung
                                                             </h5>
+                                                            <h6>
+                                                                  Kota Bandung
+                                                            </h6>
                                                             <hr>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
-                                                                  <h5>Jumlah</h5>
-                                                                  <h3>132.321</h3>
-                                                            </div>
-                                                            <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Pria</h5>
+                                                                  <h6>Jumlah</h6>
                                                                   <h4>132.321</h4>
                                                             </div>
                                                             <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Wanita</h5>
-                                                                  <h4>132.321</h4>
+                                                                  <h6>Pria</h6>
+                                                                  <h5>132.321</h5>
+                                                            </div>
+                                                            <div class="col-4 mr-4 ml-4">
+                                                                  <h6>Wanita</h6>
+                                                                  <h5>132.321</h5>
                                                             </div>
                                                       </div>
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                                <div class="border shadow rounded">
+                                                <div class="border-outline-1 shadow rounded h-100" >
                                                       <div class="mt-4 mr-4 ml-4">
-                                                            <h4>
+                                                            <h5>
                                                                   <b>
                                                                         TOTAL BUKU<br>
                                                                   </b>
-                                                            </h4>
-                                                            <h5>
-                                                                  7 Juli 2021
                                                             </h5>
+                                                            <h6>
+                                                                  Kota Bandung
+                                                            </h6>
                                                             <hr>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
-                                                                  <h5>Jumlah</h5>
-                                                                  <h3>132.321</h3>
-                                                            </div>
-                                                            <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Pria</h5>
+                                                                  <h6>Jumlah</h6>
                                                                   <h4>132.321</h4>
                                                             </div>
                                                             <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Wanita</h5>
-                                                                  <h4>132.321</h4>
+                                                                  <h6>Pria</h6>
+                                                                  <h5>132.321</h5>
+                                                            </div>
+                                                            <div class="col-4 mr-4 ml-4">
+                                                                  <h6>Wanita</h6>
+                                                                  <h5>132.321</h5>
                                                             </div>
                                                       </div>
                                                 </div>
@@ -157,67 +157,67 @@
                                     </div>
                               </div>
 
-                              <div class="col-lg-6 mt-4">
-                                    <div class="border shadow rounded overflow-auto">
+                              <div class="col-lg-6 mt-4 ">
+                                    <div class="border-outline-1 shadow rounded overflow-auto ">
                                           <canvas id="myChartLine" style="height:212px; width:400px"></canvas>
                                     </div>
                               </div>
                               <div class="col-lg-6 mt-4">
-                                    <div class="row">
-                                          <div class="col-lg-6 col-md-6">
-                                                <div class="border shadow rounded">
-                                                      <div class="mt-4 mr-4 ml-4">
-                                                            <h4>
+                                    <div class="row" >
+                                          <div class="col-lg-6 col-md-6 rounded" style="height: 265px;">
+                                                <div class="border-outline-1 shadow rounded h-100" >
+                                                      <div class="mt-4 mr-4 ml-4" >
+                                                            <h5>
                                                                   <b>
                                                                         DATA OPD BINAAN<br>
                                                                   </b>
-                                                            </h4>
-                                                            <h5>
-                                                                  Kota Bandung
                                                             </h5>
+                                                            <h6>
+                                                                  Kota Bandung
+                                                            </h6>
                                                             <hr>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
-                                                                  <h5>Jumlah</h5>
-                                                                  <h3>132.321</h3>
-                                                            </div>
-                                                            <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Pria</h5>
+                                                                  <h6>Jumlah</h6>
                                                                   <h4>132.321</h4>
                                                             </div>
                                                             <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Wanita</h5>
-                                                                  <h4>132.321</h4>
+                                                                  <h6>Pria</h6>
+                                                                  <h5>132.321</h5>
+                                                            </div>
+                                                            <div class="col-4 mr-4 ml-4">
+                                                                  <h6>Wanita</h6>
+                                                                  <h5>132.321</h5>
                                                             </div>
                                                       </div>
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                                <div class="border shadow rounded">
-                                                      <div class="mt-4 mr-4 ml-4">
-                                                            <h4>
+                                          <div class="border-outline-1 shadow rounded h-100" >
+                                                      <div class="mt-4 mr-4 ml-4" >
+                                                            <h5>
                                                                   <b>
                                                                         TOTAL REKAPITULASI<br>
                                                                   </b>
-                                                            </h4>
-                                                            <h5>
-                                                                  Arsip
                                                             </h5>
+                                                            <h6>
+                                                                  Arsip
+                                                            </h6>
                                                             <hr>
                                                       </div>
                                                       <div class="row d-flex justify-content-rounded">
                                                             <div class="col-12 mr-4 ml-4">
-                                                                  <h5>Jumlah</h5>
-                                                                  <h3>132.321</h3>
-                                                            </div>
-                                                            <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Pria</h5>
+                                                                  <h6>Jumlah</h6>
                                                                   <h4>132.321</h4>
                                                             </div>
                                                             <div class="col-4 mr-4 ml-4">
-                                                                  <h5>Wanita</h5>
-                                                                  <h4>132.321</h4>
+                                                                  <h6>Pria</h6>
+                                                                  <h5>132.321</h5>
+                                                            </div>
+                                                            <div class="col-4 mr-4 ml-4">
+                                                                  <h6>Wanita</h6>
+                                                                  <h5>132.321</h5>
                                                             </div>
                                                       </div>
                                                 </div>
