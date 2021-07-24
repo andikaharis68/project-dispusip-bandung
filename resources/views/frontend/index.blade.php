@@ -48,7 +48,9 @@
                                           </div>
                                     </div>
                                     <div class="col-4">
-                                          <img class="rounded shadow border-0 w-100" height="200" src="{{ asset('img/side-image2.png') }}" alt="">
+                                          <a href="https://wbs.bandung.go.id/">
+                                                <img class="rounded shadow border-0 w-100" height="200" src="{{ asset('img/side-image2.png') }}" alt="">
+                                          </a>
                                     </div>
                               </div>
                               <div class="row mt-3">
@@ -95,8 +97,8 @@
                               </div>
                               <div class="col-lg-6 mt-2">
                                     <div class="row" style="height: 265px;">
-                                          <div class="col-lg-6 col-md-6" >
-                                                <div class="border-outline-1 shadow rounded h-100" >
+                                          <div class="col-lg-6 col-md-6">
+                                                <div class="border-outline-1 shadow rounded h-100">
                                                       <div class="mt-4 mr-4 ml-4">
                                                             <h5>
                                                                   <b>
@@ -125,7 +127,7 @@
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                                <div class="border-outline-1 shadow rounded h-100" >
+                                                <div class="border-outline-1 shadow rounded h-100">
                                                       <div class="mt-4 mr-4 ml-4">
                                                             <h5>
                                                                   <b>
@@ -163,10 +165,10 @@
                                     </div>
                               </div>
                               <div class="col-lg-6 mt-4">
-                                    <div class="row" >
+                                    <div class="row">
                                           <div class="col-lg-6 col-md-6 rounded" style="height: 265px;">
-                                                <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4" >
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div class="mt-4 mr-4 ml-4">
                                                             <h5>
                                                                   <b>
                                                                         DATA OPD BINAAN<br>
@@ -194,8 +196,8 @@
                                                 </div>
                                           </div>
                                           <div class="col-lg-6 col-md-6">
-                                          <div class="border-outline-1 shadow rounded h-100" >
-                                                      <div class="mt-4 mr-4 ml-4" >
+                                                <div class="border-outline-1 shadow rounded h-100">
+                                                      <div class="mt-4 mr-4 ml-4">
                                                             <h5>
                                                                   <b>
                                                                         TOTAL REKAPITULASI<br>
@@ -387,7 +389,7 @@
                                                       color: #1C8DCF;
                                                 }
                                           </style>
-                                    <i class="fas fa-bullhorn"></i>
+                                          <i class="fas fa-bullhorn"></i>
                                     </b>
                               </h2>
                         </div>
