@@ -20,13 +20,13 @@
                                           </div>
                                           <div class="carousel-inner rounded">
                                                 <div class="carousel-item active">
-                                                      <img height="357" src="https://www.infobdg.com/v2/wp-content/uploads/2017/07/341-library.jpg" class="d-block w-100" alt="...">
+                                                      <img height="365" src="https://www.infobdg.com/v2/wp-content/uploads/2017/07/341-library.jpg" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                      <img height="357" src="https://1.bp.blogspot.com/-rT2IMwRyoJY/X3Ge1u-TelI/AAAAAAAAB7I/fUy9dM-nXXAOU2gBjqrXweAB5-Hh97LbgCLcBGAsYHQ/w640-h462/%255BJejakakhi%255DPerpustakaan-Anak-Kota-Bandung1.jpg" class="d-block w-100" alt="...">
+                                                      <img height="365" src="https://1.bp.blogspot.com/-rT2IMwRyoJY/X3Ge1u-TelI/AAAAAAAAB7I/fUy9dM-nXXAOU2gBjqrXweAB5-Hh97LbgCLcBGAsYHQ/w640-h462/%255BJejakakhi%255DPerpustakaan-Anak-Kota-Bandung1.jpg" class="d-block w-100" alt="...">
                                                 </div>
                                                 <div class="carousel-item">
-                                                      <img height="357" src="https://cdn.idntimes.com/content-images/community/2020/07/screenshot-146-8f103979f410e4eb457555f55845b44a.png" class="d-block w-100" alt="...">
+                                                      <img height="365" src="https://cdn.idntimes.com/content-images/community/2020/07/screenshot-146-8f103979f410e4eb457555f55845b44a.png" class="d-block w-100" alt="...">
                                                 </div>
                                           </div>
                                           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -58,10 +58,18 @@
                                           <div class="card rounded shadow p-3">
                                                 <div class="card-body">
                                                       <div class="row">
-                                                            <div class="col-6 pr-4">
+                                                            <div class="col-8 pr-4">
+                                                                  <h4><b>#informasiterkini</b>
+                                                                        <style>
+                                                                              .fa-bullhorn {
+                                                                                    color: #1C8DCF;
+                                                                              }
+                                                                        </style>
+                                                                        <i class="fas fa-bullhorn"></i>
+                                                                  </h4>
                                                                   <h5 class="card-title fs-16 semi-bold">Ikuti berita terkini Perpustakaan Kota Bandung dengan mengikuti kanal sosial media kami.</h5>
                                                             </div>
-                                                            <div class="col-6">
+                                                            <div class="col-4">
                                                                   <div class="d-flex justify-content-center mb-3 mx-3">
                                                                         <img height=30 width=30 src="svg/instagram.svg" alt="">
                                                                   </div>
@@ -381,13 +389,7 @@
                         <!-- <div class="border rounded overflow-hidden flex-md-row mb-4 p-4 shadow h-md-250 position-relative"> -->
                         <div class="pl-3 py-4 pb-2">
                               <h2>
-                                    <b>#informasiterkini
-                                          <style>
-                                                .fa-bullhorn {
-                                                      color: #1C8DCF;
-                                                }
-                                          </style>
-                                          <i class="fas fa-bullhorn"></i>
+                                    <b>Berita Terkini
                                     </b>
                               </h2>
                         </div>
@@ -503,7 +505,7 @@
                   </div>
                   <div class="m-4">
                         <a href="{{ route('galery') }}">
-                              <button class="btn btn-block btn-outline-success btn-lg rounded" >
+                              <button class="btn btn-block btn-outline-success btn-lg rounded">
                                     Lihat Selengkapnya
                               </button>
                         </a>
