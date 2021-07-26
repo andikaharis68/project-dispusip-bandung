@@ -31,7 +31,7 @@
         </div>
         <div class="row ml-4 mr-4 mt-5">
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/1" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -43,7 +43,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/2" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/2.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Jalan</h5>
@@ -55,7 +55,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/3" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/3.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Pohon</h5>
@@ -69,7 +69,7 @@
         </div>
         <div class="row ml-4 mr-4">
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/4" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -81,7 +81,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/5" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/2.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -93,7 +93,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/6" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/3.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -107,7 +107,7 @@
         </div>
         <div class="row ml-4 mr-4">
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/7" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -119,7 +119,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/8" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/2.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
@@ -131,7 +131,7 @@
                 </a>
             </div>
             <div class="img-gallery mb-4" style="height: 300px;">
-                <a href="#" class="h-100">
+                <a href="{{ url('detail-galery') }}/9" class="h-100">
                     <img class="img-gallery-image" style="height: 250px;" src="{{ asset('img/galeri-arsip/3.jpg') }}">
                     <div class="card-body">
                         <h5 class="card-subtitle mb-2 text-muted text-center">Foto Perpustakaan</h5>
