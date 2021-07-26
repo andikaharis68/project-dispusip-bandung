@@ -1,11 +1,33 @@
 @extends('layouts.app')
 @section('content')
-<section class="container border rounded flex-md-row shadow position-relative mt-10" style="box-sizing: border-box; ">
-    <div class="content-2-2 mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
-        <div class="text-center title-text">
+<section class="container border rounded flex-md-row shadow position-relative mt-10" style="box-sizing: border-box; font-family: 'Poppins', sans-serif">
+    <div class="content-2-2 mx-auto position-relative">
+        <div class="mt-5 mt-sm-0 text-center title-text">
             <h1 class="text-title">Detail Galeri</h1>
         </div>
-        <div class="card" style="height: 500px;">
+        <div class="container px-md-5">
+            <div class="card">
+                <div class="row gy-4 gy-md-0">
+                    <div class="col-md-6">
+                        <div class="d-flex justify-content-center">
+                            <img class="img-gallery-image" style="width: 250px;" src="{{ asset('img/galeri-arsip/1.jpg') }}">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-row mb-2">
+                            <img height=20 width=20 src="{{ asset('svg/info.svg') }}" alt="">
+                            <p class="mx-2">project status: complete</p>
+                        </div>
+                        <div class="d-flex flex-row mb-2">
+                            <img height=20 width=20 src="{{ asset('svg/map.svg') }}" alt="">
+                            <p class="mx-2">location: bali, indonesia</p>
+                        </div>
+                        <div class="pl-4 pr-3">
+                            <p class="mx-2">in a plot with large trees, the client sought to live in proximity to nature, that it must become a characteristic part of the architecture and that it gets inhabited as well as the built object.dkanwkdnawkdnawlknfd,jewfehvfhjegfwadajdabjdhjdgwvwadadjgdvwhjdhwfdygqwygdywgdyuvwdmabvhd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="row ml-4 mr-4 mt-5">
             <div class="img-gallery mb-4" style="height: 300px;">
