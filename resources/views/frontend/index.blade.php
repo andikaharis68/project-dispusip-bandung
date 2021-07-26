@@ -502,9 +502,11 @@
                         </div>
                   </div>
                   <div class="m-4">
-                        <button class="btn btn-block btn-outline-success btn-lg rounded">
-                              Lihat Selengkapnya
-                        </button>
+                        <a href="{{ route('galery') }}">
+                              <button class="btn btn-block btn-outline-success btn-lg rounded" >
+                                    Lihat Selengkapnya
+                              </button>
+                        </a>
                   </div>
             </div>
       </section>
