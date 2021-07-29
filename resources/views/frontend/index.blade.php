@@ -3,7 +3,6 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" />
 @endpush
-
 @section('content')
 
 <main>
@@ -698,6 +697,87 @@
             }
       })
 </script>
-<script type="text/javascript" src="{{ asset('js/frontend/index.js') }}"></script>
+<script>
+            $(document).ready(function() {
+
+                const labels = [
+                    'January',
+                    'February',
+                    'March',
+                    'April',
+                    'May',
+                    'June',
+                    'July',
+                    'August',
+                    'September',
+                    'October',
+                    'December',
+                ];
+                const data = {
+                    labels: labels,
+                    datasets: [{
+                            label: 'My First dataset',
+                            backgroundColor: '#1C8DCF',
+                            borderColor: '#ceb546',
+                            data: [0, 10, 5, 2, 20, 30, 45, 10, 20, 30, 40],
+                            type: 'line'
+                        },
+                        {
+                            label: 'My First dataset',
+                            backgroundColor: '#399f4f',
+                            borderColor: '#1C8DCF',
+                            data: [0, 10, 5, 2, 20, 30, 45, 10, 20, 30, 40],
+                            stack: 'combined'
+                        }
+                    ]
+                };
+
+                const configBar = {
+                    type: 'bar',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            title: {
+                                display: true,
+                                text: 'Data Pustakawan'
+                            }
+                        }
+                    },
+                };
+
+                const configLine = {
+                    type: 'bar',
+                    data: data,
+                    options: {
+                        responsive: true,
+                        plugins: {
+                            legend: {
+                                position: 'top',
+                            },
+                            title: {
+                                display: true,
+                                text: 'Chart.js Bar Chart'
+                            }
+                        }
+                    },
+                };
+
+                var myChart = new Chart(
+                    document.getElementById('myChart'),
+                    configBar
+                );
+
+                var myChartLine = new Chart(
+                    document.getElementById('myChartLine'),
+                    configLine
+                );
+
+
+            });
+        </script>
 @endpush
 @endsection

@@ -3,9 +3,6 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
-use App\Http\Utils\Enum\UserRole;
-use App\Models\User;
-use Illuminate\Support\Facades\Hash;
 
 class CreateUsersTable extends Migration
 {
@@ -22,18 +19,9 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
-            $table->enum('role', [UserRole::SUPERADMIN, UserRole::ADMIN, UserRole::MEMBER])->default(UserRole::MEMBER);
             $table->rememberToken();
             $table->timestamps();
-            $table->softDeletes();
         });
-
-        User::firstOrCreate([
-            "name" => "Super Admin",
-            "email" => "admin@admin.com",
-            "password" => Hash::make("Admin1234!"),
-            "role" => UserRole::SUPERADMIN,
-        ]);
     }
 
     /**
