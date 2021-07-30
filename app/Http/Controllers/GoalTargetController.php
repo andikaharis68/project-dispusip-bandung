@@ -8,6 +8,6 @@ class GoalTargetController extends Controller
 {
     public function index()
     {
-        return view('/frontend/goal-target');
+        return view('/frontend/goal');
     }
 }
