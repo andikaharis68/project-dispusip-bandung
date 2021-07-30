@@ -480,30 +480,42 @@
       <section class="container border rounded flex-md-row shadow position-relative" style="box-sizing: border-box">
             <div class="content-2-2 mx-auto position-relative" style="font-family: 'Poppins', sans-serif">
                   <div class="text-center title-text">
-                        <h1 class="text-title">Galeri Kearsipan Kota Bandung</h1>
+                        <h1 class="text-title">Galeri Perpustakaan Kota Bandung</h1>
                   </div>
                   <div class="owl-carousel owl-theme container">
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/1">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              </a>
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/2">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              </a>
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/3">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              </a>
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/4.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/4">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/4.jpg') }}" alt="">
+                              </a>
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/5">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/1.jpg') }}" alt="">
+                              </a>
                         </div>
                         <div class="item">
-                              <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              <a href="{{ url('library/galery') }}/6">
+                                    <img style="height: 200px;" src="{{ asset('img/galeri-arsip/2.jpg') }}" alt="">
+                              </a>
                         </div>
                   </div>
                   <div class="m-4">
-                        <a >
+                        <a href="{{ route('library galery') }}">
                               <button class="btn btn-block btn-outline-success btn-lg rounded">
                                     Lihat Selengkapnya
                               </button>
@@ -520,14 +532,14 @@
                   </div>
                   <div class="row ml-4 mr-4">
                         <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/1">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/1">
                                           <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"></i> Description </p>
                                           </div>
                                     </a>
                               </div>
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/2">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/2">
                                           <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/2.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
@@ -537,14 +549,14 @@
                         </div>
 
                         <div class="col-lg-4 mb-4 mb-lg-0">
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/3">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/3">
                                           <div class="img-gallery-overlay"></div> <img height="420" class="img-gallery-image" src="{{ asset('img/galeri-arsip/3.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
                                     </a>
                               </div>
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/4">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/4">
                                           <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/4.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
@@ -554,14 +566,14 @@
                         </div>
 
                         <div class="col-lg-4 mb-4 mb-lg-0">
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/5">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/5">
                                           <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/5.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
                                           </div>
                                     </a>
                               </div>
-                              <div class="img-gallery mb-4"> <a href="{{ url('detail-galery') }}/6">
+                              <div class="img-gallery mb-4"> <a href="{{ url('archive/galery') }}/6">
                                           <div class="img-gallery-overlay"></div> <img class="img-gallery-image" src="{{ asset('img/galeri-arsip/1.jpg') }}">
                                           <div class="img-gallery-details fadeIn-bottom">
                                                 <p class="img-gallery-text"> Description </p>
@@ -571,7 +583,7 @@
                         </div>
                   </div>
                   <div class="m-4">
-                        <a href="{{ route('galery') }}">
+                        <a href="{{ route('archive galery') }}">
                               <button class="btn btn-block btn-outline-success btn-lg rounded">
                                     Lihat Selengkapnya
                               </button>

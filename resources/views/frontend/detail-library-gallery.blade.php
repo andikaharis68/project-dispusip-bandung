@@ -10,7 +10,7 @@
 <section class="container border rounded flex-md-row shadow position-relative mt-10" style="box-sizing: border-box; font-family: 'Poppins', sans-serif">
     <div class="content-2-2 mx-auto position-relative">
         <div class="mt-5 mt-sm-0 text-center title-text">
-            <h1 class="text-title">Detail Galeri</h1>
+            <h1 class="text-title">Detail Galeri Perpustakaan</h1>
         </div>
         <div class="container px-md-5">
             <div class="card">

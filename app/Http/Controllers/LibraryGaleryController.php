@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class GaleryController extends Controller
+class LibraryGaleryController extends Controller
 {
     public function index()
     {
-        return view('/frontend/galery');
+        return view('/frontend/library-gallery');
     }
 }

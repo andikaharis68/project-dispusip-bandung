@@ -27,5 +27,7 @@ Route::get('/profile/task-function', [App\Http\Controllers\MainTaskFunctionContr
 Route::get('/profile/goal-target', [App\Http\Controllers\GoalTargetController::class, 'index'])->name('goal and target');
 Route::get('/profile/organizational-structure', [App\Http\Controllers\OrganizationalStructureController::class, 'index'])->name('organizational structure');
 Route::get('/contact', [App\Http\Controllers\ContactController::class, 'index'])->name('contact');
-Route::get('/galery', [App\Http\Controllers\GaleryController::class, 'index'])->name('galery');
-Route::get('/detail-galery/{id}', [App\Http\Controllers\DetailGaleryController::class, 'index'])->name('detail galery');
+Route::get('/archive/galery', [App\Http\Controllers\ArchiveGaleryController::class, 'index'])->name('archive galery');
+Route::get('/archive/galery/{id}', [App\Http\Controllers\DetailArchiveGaleryController::class, 'index'])->name('detail archive galery');
+Route::get('/library/galery', [App\Http\Controllers\LibraryGaleryController::class, 'index'])->name('library galery');
+Route::get('/library/galery/{id}', [App\Http\Controllers\DetailLibraryGaleryController::class, 'index'])->name('detail library galery');
