@@ -134,24 +134,24 @@
                                     <li class="nav-item dropdown @if(Request::segment(1) == 'ppid') active @endif">
                                           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">PPID</a>
                                           <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                                <li><a class="dropdown-item" href="{{ route('organizational structure') }}">Pembentukan dan Struktur PPID </a></li>
-                                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">PPID Pembantu</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Informasi Wajib Berkala</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Keuangan</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Informasi Wajib Setiap Saat</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Informasi Serta Merta</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Kelengkapan</a></li>
+                                                <!-- <li><a class="dropdown-item" href="/ppid/structure">Pembentukan dan Struktur PPID </a></li> -->
+                                                <li><a class="dropdown-item" href="/ppid/helper">PPID Pembantu</a></li>
+                                                <li><a class="dropdown-item" href="/ppid/periodic">Informasi Wajib Berkala</a></li>
+                                                <li><a class="dropdown-item" href="/ppid/finance">Keuangan</a></li>
+                                                <li><a class="dropdown-item" href="/ppid/alltimes">Informasi Wajib Setiap Saat</a></li>
+                                                <li><a class="dropdown-item" href="/ppid/sertamerta">Informasi Serta Merta</a></li>
+                                                <li><a class="dropdown-item" href="/ppid/completeness">Kelengkapan</a></li>
                                           </ul>
                                     </li>
 
                                     <li class="nav-item dropdown @if(Request::segment(1) == 'news') active @endif">
                                           <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">NEWS</a>
                                           <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                                <li><a class="dropdown-item" href="{{ route('organizational structure') }}">Jurnal</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Artikel</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Press Release</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Kegiatan</a></li>
-                                                <li><a class="dropdown-item" href="{{ route('goal and target') }}">Pengumuman</a></li>
+                                                <li><a class="dropdown-item" href="/news/journal">Jurnal</a></li>
+                                                <li><a class="dropdown-item" href="/news/article">Artikel</a></li>
+                                                <li><a class="dropdown-item" href="/news/release">Press Release</a></li>
+                                                <li><a class="dropdown-item" href="/news/activity">Kegiatan</a></li>
+                                                <li><a class="dropdown-item" href="/news/announcement">Pengumuman</a></li>
                                           </ul>
                                     </li>
 
