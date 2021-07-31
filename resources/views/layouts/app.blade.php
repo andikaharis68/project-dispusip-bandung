@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DISPUSIP KOTA BANDUNG</title>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <!-- <script src="{{ asset('js/app.js') }}" defer></script>
 
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet"> -->
 
     @include('layouts.styles')
 
     @stack('custom-styles')
 </head>
 
-<body class="hold-transition login-page">
-    <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
+<body class="hold-transition layout-navbar-fixed">
+    <div class="wrapper">
         @include('layouts.header')
 
         @yield('content')
@@ -26,7 +26,7 @@
         @include('layouts.scripts')
 
         @stack('custom-scripts')
-    </section>
+    </div>
 </body>
 
 </html>

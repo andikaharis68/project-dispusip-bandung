@@ -1,282 +1,120 @@
-<section class="h-100 w-100 bg-white" style="box-sizing: border-box">
-    <div class="header-4-2 container-xxl mx-auto p-0 position-relative" style="font-family: 'Poppins', sans-serif;">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="navbar-toggler container border-outline-1 bg-white fixed-top p-4"
-                style="border-color:#1C8DCF; box-shadow:0 0 32px -4px rgba(0,0,0,.15);">
-                <a class="modal-title" id="targetModalLabel">
-                    <img src="{{ asset('img/') }}/Logo-DISPUSIP-Kota-Bandung.png" height="50" width="50" alt="" />
-                </a>
-                <button class="border-0" type="button" style="background-color: #FFFFFF;" data-bs-toggle="modal"
-                    data-bs-target="#targetModal-item">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-            </div>
-
-            <div class="modal-item modal fade" id="targetModal-item" tabindex="-1" role="dialog"
-                aria-labelledby="targetModalLabel" aria-hidden="true">
-                <div class="modal-dialog" role="document">
-                    <div class="modal-content bg-white border-0 p-4">
-                        <div class="modal-body" style="padding: 2rem; padding-top: 0; padding-bottom: 0">
-                            <div class="modal-header border-0">
-                                <a class="modal-title" id="targetModalLabel">
-                                    <img src="{{ asset('img/') }}/Logo-DISPUSIP-Kota-Bandung.png" height="50"
-                                        width="50" alt="" />
-                                </a>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                            <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="/" style="color:black">
-                                        <b>Perpustakaan & Kearsipan</b> <br>
-                                        Kota Bandung
-                                    </a>
-                                </li>
-                                <li class="nav-item dropdown @if (Request::segment(1)=='profile'
-                                    ) active @endif">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Profile</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('organizational structure') }}">Struktur Organisasi</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Visi dan
-                                                misi</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Tujuan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('main task and function') }}">Tugas pokok dan
-                                                Fungsi</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('activity dinas') }}">Program/Kegiatan Dinas</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('library law') }}">Dasar Hukum
-                                                Perpustakaan</a></li>>
-                                        <li><a class="dropdown-item" href="{{ route('archive law') }}">Dasar Hukum
-                                                Kearsipan</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown @if (Request::segment(1)=='ppid' ) active @endif">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">PPID</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('organizational structure') }}">Pembentukan dan
-                                                Struktur PPID </a></li>
-                                        <li><a class="dropdown-item" href="{{ route('vision and mission') }}">PPID
-                                                Pembantu</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('main task and function') }}">Informasi Wajib
-                                                Berkala</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Keuangan</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Informasi Wajib
-                                                Setiap Saat</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Informasi Serta
-                                                Merta</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Kelengkapan</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">NEWS</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('organizational structure') }}">Jurnal</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('vision and mission') }}">Artikel</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('main task and function') }}">Press Release</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Kegiatan</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Pengumuman</a></li>
-                                    </ul>
-                                </li>
-
-
-                                <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Perpustakaan</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('organizational structure') }}">Keanggotaan</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('vision and mission') }}">Katalog</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('main task and function') }}">Data Perpustakaan</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Indeks Kepuasan
-                                                Masyarakat (IKM) <br> Terhapdap Layanan Perpustakaan</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Kuesoner Indeks Minat
-                                                <br> Baca Kota Bandung</a></li>
-                                    </ul>
-                                </li>
-
-                                <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Kearsipan</a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('organizational structure') }}">Data Kearsipan</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Galeri
-                                                Arsip</a></li>
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('main task and function') }}">Khazanah Arsip</a></li>
-                                        <li><a class="dropdown-item" href="{{ route('goal') }}">Indeks Kepuasan
-                                                Masyarakat (IKM) <br> Terhadapan Layanan Kearsipan</a></li>
-                                    </ul>
-                                </li>
-
-
-
-                                <!-- <li class="nav-item @if (Request::segment(1) == 'information') active @endif">
-                                          <a class="nav-link" href="{{ route('information') }}">Informasi</a>
-                                    </li>
-                                    <li class="nav-item @if (Request::segment(1) == 'article') active @endif">
-                                          <a class="nav-link" href="{{ route('article') }}">Berita</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="{{ route('information') }}">Perpustakkan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="{{ route('article') }}">Kearsipan</a>
-                                    </li>
-                                    <li class="gap-3">
-                                          <a href="{{ route('contact') }}">
-                                                <button class="btn btn-fill text-white">Kontak kami</button>
-                                          </a>
-                                    </li> -->
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="collapse navbar-collapse bg-white fixed-top border-outline-1"
-                style="padding: 40px; flex: 1; justify-content: space-between; height: 60px; box-shadow:0 0 32px -4px rgba(0,0,0,.15); "
-                id="navbarTogglerDemo">
-                <div class="container" style="flex: 1;">
-                    <a href="#">
-                        <img style="margin-right: 1rem" src="{{ asset('img/') }}/Logo-DISPUSIP-Kota-Bandung.png"
-                            height="45" width="45" alt="" />
-                    </a>
-                    <div class="nav-item" style="flex: 1; align-items: center;">
-                        <a class="nav-link" href="/" style="color:black">
-                            <b>Perpustakaan & Kearsipan</b> <br>
-                            Kota Bandung
-                        </a>
-                    </div>
-                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                        <li class="nav-item dropdown @if (Request::segment(1)=='profile' ) active @endif">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Profile</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="{{ route('organizational structure') }}">Struktur
-                                        Organisasi</a></li>
-                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Visi dan
-                                        misi</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Tujuan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Tugas pokok
-                                        dan Fungsi</a></li>
-                                <li><a class="dropdown-item" href="{{ route('activity dinas') }}">Program/Kegiatan
-                                        Dinas</a></li>
-                                <li><a class="dropdown-item" href="{{ route('library law') }}">Dasar Hukum
-                                        Perpustakaan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('archive law') }}">Dasar Hukum
-                                        Kearsipan</a></li>
+<!-- Navbar -->
+<nav class="main-header navbar navbar-expand-md navbar-light navbar-white" style="border: 0.125rem solid #0d6efd; margin-left: 0 !important;">
+    <div class="container">
+        <a href="../../index3.html" class="navbar-brand">
+            <img src="{{ asset('img/') }}/Logo-DISPUSIP-Kota-Bandung.png" height="50" width="50" alt="" class="brand-image img-circle elevation-3" style="opacity: .8">
+            <!-- <span class="brand-text font-weight-light">AdminLTE 3</span> -->
+            <a class="brand-text bold" href="/" style="color:black; width:150px; text-decoration: none;">
+                DISARSIPUS <br>
+                Kota Bandung
+            </a>
+        </a>
+        <div class="collapse navbar-collapse order-3" style="background-color:#ffff;" id="navbarCollapse">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Profil</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        <li><a class="dropdown-item" href="{{ route('organizational structure') }}">Struktur Organisasi </a></li>
+                        <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Visi dan Misi</a></li>
+                        <li><a href="{{ route('goal') }}" class="dropdown-item">Tujuan</a></li>
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Dasar Hukum</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="{{ route('library law') }}" class="dropdown-item">Dasar Hukum Perpustakaan</a></li>
+                                <li><a href="{{ route('archive law') }}" class="dropdown-item">Dasar Hukum Arsip</a></li>
                             </ul>
                         </li>
-
-                        <li class="nav-item dropdown @if (Request::segment(1)=='ppid' ) active @endif">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">PPID</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item"
-                                        href="{{ route('organizational structure') }}">Pembentukan dan Struktur PPID
-                                    </a></li>
-                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">PPID
-                                        Pembantu</a></li>
-                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Informasi
-                                        Wajib Berkala</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Keuangan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Informasi Wajib Setiap
-                                        Saat</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Informasi Serta Merta</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Kelengkapan</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">NEWS</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item"
-                                        href="{{ route('organizational structure') }}">Jurnal</a></li>
-                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Artikel</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Press
-                                        Release</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Kegiatan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Pengumuman</a></li>
-                            </ul>
-                        </li>
-
-
-                        <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Perpustakaan</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item"
-                                        href="{{ route('organizational structure') }}">Keanggotaan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Katalog</a>
-                                </li>
-                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Data
-                                        Perpustakaan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Indeks Kepuasan Masyarakat
-                                        (IKM) <br> Terhapdap Layanan Perpustakaan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Kuesoner Indeks Minat <br>
-                                        Baca Kota Bandung</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown @if (Request::segment(1)=='news' ) active @endif">
-                            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
-                                aria-expanded="false">Kearsipan</a>
-                            <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                                <li><a class="dropdown-item" href="{{ route('organizational structure') }}">Data
-                                        Kearsipan</a></li>
-                                <li><a class="dropdown-item" href="{{ route('vision and mission') }}">Galeri
-                                        Arsip</a></li>
-                                <li><a class="dropdown-item" href="{{ route('main task and function') }}">Khazanah
-                                        Arsip</a></li>
-                                <li><a class="dropdown-item" href="{{ route('goal') }}">Indeks Kepuasan Masyarakat
-                                        (IKM) <br> Terhadapan Layanan Kearsipan</a></li>
-                            </ul>
-                        </li>
-
-
-
-                        <!-- <li class="nav-item @if (Request::segment(1) == 'information') active @endif">
-                                          <a class="nav-link" href="{{ route('information') }}">Informasi</a>
-                                    </li>
-                                    <li class="nav-item @if (Request::segment(1) == 'article') active @endif">
-                                          <a class="nav-link" href="{{ route('article') }}">Berita</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="{{ route('information') }}">Perpustakkan</a>
-                                    </li>
-                                    <li class="nav-item">
-                                          <a class="nav-link" href="{{ route('article') }}">Kearsipan</a>
-                                    </li>
-                                    <li class="gap-3">
-                                          <a href="{{ route('contact') }}">
-                                                <button class="btn btn-fill text-white">Kontak kami</button>
-                                          </a>
-                                    </li> -->
+                        <li><a href="{{ route('activity dinas') }}" class="dropdown-item">Program/Kegiatan Dinas</a></li>
                     </ul>
-                </div>
-            </div>
-        </nav>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">PPID</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        <li><a href="#" class="dropdown-item">PPID Pembantu</a></li>
+                        <li><a href="#" class="dropdown-item">Informasi Wajib Berkala</a></li>
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Keuangan</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Tahun 2018</a></li>
+                            </ul>
+                        </li>
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Informasi Wajib <br>Setiap Saat</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Informasi yang Wajib Disediakan Setiap Saat</a></li>
+                                <li class="dropdown-submenu">
+                                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">SOP</a>
+                                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
+                                        <li><a href="#" class="dropdown-item">SOP Pengembangan Perpustakaan Kearsipan</a></li>
+                                        <li><a href="#" class="dropdown-item">SOP Informasi Teknologi</a></li>
+                                        <li><a href="#" class="dropdown-item">SOP Pengelolaan Perpustakaan</a></li>
+                                        <li><a href="#" class="dropdown-item">SOP Pengelolaan Kearsipan</a></li>
+                                    </ul>
+                                </li>
+                                <li><a tabindex="-1" href="#" class="dropdown-item">RPJMD</a></li>
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Rencana Strategis</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">NEWS</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        <li><a href="#" class="dropdown-item">Jurnal</a></li>
+                        <li><a href="#" class="dropdown-item">Artikel</a></li>
+                        <li><a href="#" class="dropdown-item">Press Release</a></li>
+                        <li><a href="#" class="dropdown-item">Kegiatan</a></li>
+                        <li><a href="#" class="dropdown-item">Pengumuman</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Perpustakaan</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Keanggotaan</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Syarat Pendaftaran</a></li>
+                                <li><a href="#" class="dropdown-item">Pendaftaran Anggota</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Katalog Buku</a></li>
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Data Perpustakaan</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Data Pemustaka</a></li>
+                                <li><a href="#" class="dropdown-item">Data Buku</a></li>
+                                <li><a href="#" class="dropdown-item">Statistik</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Indeks Kepuasan Masyarakat (IKM) <br />Terhadap Layanan Perpustakaan</a></li>
+                        <li><a href="#" class="dropdown-item">Kuesioner Indeks Minat Baca Kota Bandung</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Kearsipan</a>
+                    <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                        <li class="dropdown-submenu dropdown-hover">
+                            <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Data Kearsipan</a>
+                            <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
+                                <li><a tabindex="-1" href="#" class="dropdown-item">Data OPD binaan</a></li>
+                                <li><a href="#" class="dropdown-item">Data Penelusuran Arsip Sejarah</a></li>
+                                <li><a href="#" class="dropdown-item">Data Rekapitulasi Daftar Arsip Statis</a></li>
+                                <li><a href="#" class="dropdown-item">Dokumen Bidang Kearsipan</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" class="dropdown-item">Galeri Arsip</a></li>
+                        <li><a href="#" class="dropdown-item">Khazanah Arsip</a></li>
+                        <li><a href="#" class="dropdown-item">Indeks Kepuasan Masyarakat (IKM) <br />Terhadap Layanan Kearsipan</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <!-- Right navbar links -->
+        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </ul>
     </div>
-</section>
+</nav>

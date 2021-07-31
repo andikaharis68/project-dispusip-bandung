@@ -1,16 +1,19 @@
 <?php
 
-use App\Http\Controllers\ActivityDinasController;
-use App\Http\Controllers\ArchiveLawController;
+use App\Http\Controllers\Frontend\Profile\ActivityDinasController;
+use App\Http\Controllers\Frontend\Profile\ArchiveLawController;
+use App\Http\Controllers\Frontend\Profile\GoalTargetController;
+use App\Http\Controllers\Frontend\Profile\LibraryLawController;
+use App\Http\Controllers\Frontend\Profile\VisionMissionController;
+use App\Http\Controllers\Frontend\Profile\OrganizationalStructureController;
+
 use App\Http\Controllers\ArticleController;
-use App\Http\Controllers\GoalTargetController;
-use App\Http\Controllers\LibraryLawController;
 use App\Http\Controllers\Auth\AuthController;
 use App\Http\Controllers\DetailGaleryController;
+use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InformationController;
 use App\Http\Controllers\MainTaskFunctionController;
-use App\Http\Controllers\OrganizationalStructureController;
 use App\Http\Controllers\View\Backend\Archive\ArchiveGalleryView;
 use App\Http\Controllers\View\Backend\Archive\ArchiveLawView;
 use App\Http\Controllers\View\Backend\DashboardController;
@@ -18,7 +21,6 @@ use App\Http\Controllers\View\Backend\Library\LibraryGalleryView;
 use App\Http\Controllers\View\Backend\Library\LibraryLawView;
 use App\Http\Controllers\View\Backend\LoginView;
 use App\Http\Controllers\View\Backend\UserController;
-use App\Http\Controllers\VisionMissionController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -44,23 +46,29 @@ Route::get('/', function () {
 
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
-Route::get('/information', [InformationController::class, 'index'])->name('information');
-Route::get('/article', [ArticleController::class, 'index'])->name('article');
+// Profile
 Route::get('/profile/vision-mission', [VisionMissionController::class, 'index'])->name('vision and mission');
 Route::get('/profile/task-function', [MainTaskFunctionController::class, 'index'])->name('main task and function');
 Route::get('/profile/goal', [GoalTargetController::class, 'index'])->name('goal');
 Route::get('/profile/organizational-structure', [OrganizationalStructureController::class, 'index'])->name('organizational structure');
-Route::get('/contact', [ContactController::class, 'index'])->name('contact');
-Route::get('/galery', [GaleryController::class, 'index'])->name('galery');
-Route::get('/detail-galery/{id}', [DetailGaleryController::class, 'index'])->name('detail galery');
 Route::get('/profile/activity-dinas', [ActivityDinasController::class, 'index'])->name('activity dinas');
 Route::get('/dasar-hukum/perpustakaan', [LibraryLawController::class, 'index'])->name('library law');
 Route::get('/dasar-hukum/kearsipan', [ArchiveLawController::class, 'index'])->name('archive law');
+// PPID
+// News
+// Perpustakaan
+// Kearsipan
+Route::get('/information', [InformationController::class, 'index'])->name('information');
+Route::get('/article', [ArticleController::class, 'index'])->name('article');
+Route::get('/contact', [ContactController::class, 'index'])->name('contact');
+Route::get('/galery', [GaleryController::class, 'index'])->name('galery');
+Route::get('/detail-galery/{id}', [DetailGaleryController::class, 'index'])->name('detail galery');
+
+
 
 // Backend
 Route::get('/login', [LoginView::class, 'index'])->name('login');
 Route::post('/login', [AuthController::class, 'login'])->name('auth.login');
-
 Route::middleware(['web', 'auth'])->group(function () {
     Route::get('/logout', [AuthController::class, 'logout'])->name('auth.logout');
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
